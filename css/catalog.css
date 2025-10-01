@@ -1,0 +1,133 @@
+.catalog__title {
+  max-width: 556px;
+}
+
+.catalog__content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.catalog__form {
+  max-width: 557px;
+  width: 100%;
+}
+.catalog__form-title {
+  max-width: 430px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1.16;
+  font-weight: 300;
+}
+.catalog__form-text {
+  max-width: 430px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.16;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.catalog__form-input {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid var(--color-bg-black);
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.16;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.catalog__form-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.16;
+  margin-bottom: 51px;
+}
+.catalog__form-checkbox {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--color-bg-black);
+  margin: 0;
+}
+.catalog__form-btn {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-text-white);
+  background-color: var(--color-bg-black);
+  padding: 20px 54px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1300px) {
+  .catalog__content {
+    display: block;
+  }
+  .catalog__content-img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 740px) {
+  .catalog__content {
+    margin-bottom: 50px;
+  }
+  .catalog__form {
+    max-width: 100%;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 540px) {
+  .catalog__content-img {
+    margin-bottom: 20px;
+  }
+  .catalog__form-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .catalog__form-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .catalog__form-input {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .catalog__form-label {
+    margin-bottom: 20px;
+  }
+  .catalog__form-btn {
+    padding: 15px 54px;
+    font-size: 16px;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
