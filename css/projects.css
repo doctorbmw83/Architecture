@@ -51,6 +51,9 @@
   transform: translateX(15px);
 }
 @media (max-width: 740px) {
+  .projects {
+    overflow-x: hidden;
+  }
   .projects__item {
     padding: 10px;
   }
